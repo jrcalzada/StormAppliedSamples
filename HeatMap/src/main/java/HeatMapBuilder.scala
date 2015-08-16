@@ -13,11 +13,9 @@ class HeatMapBuilder extends BaseBasicBolt {
     if (isTickTuple(tuple)) {
       emitHeatmap(basicOutputCollector)
     } else {
-      val time = tuple.getLongByField("time")
+      val timeInterval = tuple.getLongByField("time-interval")
       val latLng = tuple.getValueByField("geocode").asInstanceOf[LatLng]
-
-      val targetInterval = selectTimeInterval(time)
-      heatmaps(targetInterval) = latLng :: heatmaps.getOrElse(targetInterval, List[LatLng]())
+      heatmaps(timeInterval) = latLng :: heatmaps.getOrElse(timeInterval, List[LatLng]())
     }
   }
 
