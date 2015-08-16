@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ApacheStormExplore.iml" filepath="$PROJECT_DIR$/ApacheStormExplore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GithubCommitCounter/GithubCommitCounter.iml" filepath="$PROJECT_DIR$/GithubCommitCounter/GithubCommitCounter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HeatMap/HeatMap.iml" filepath="$PROJECT_DIR$/HeatMap/HeatMap.iml" />
+    </modules>
+  </component>
+</project>
